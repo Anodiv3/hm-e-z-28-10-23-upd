@@ -3,39 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homework-3-1</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles-3-1.css">
 </head>
 <body>
-<div class="containerGrid">
-    <header class="containerGridHeader">
-        <div>
-            <h1>header</h1>
-            <p>one-two-three <br> three-two-one</p>
-        </div>
+    <div class="containerGrid">
+    <header class="header">
+        <div><h1>Hello</h1></div>
+        <div><h2>It's my first card!</h2></div>
     </header>
-    <aside class="containerGridAside">
-        <div>
-            aside
-        </div>
+    <aside class="aside">
+        <div></div>
     </aside>
-    <main class="containerGridMain">
-        <div class="containerGridOneTwhoThree">
-            <p class="one1">due date Monday, May 1, 2023</p>
-            <p class="two2">two <span class="circle-image"><img src="images/sarah.jpg" alt=""></span></p>
-            <p class="three3">three <span class="circle-image"><img src="images/sarah.jpg" alt=""></span></p>
-        </div>
-        <div class="buttonradioImgDiv">
-            <div> <span><img height="30" width="30" src="images/sarah.jpg" alt=""></span>
-            <input type="radio" id="open" name="openclosed" value="L">
-            <label for="open">open</label>
-            <input type="radio" id="closed" name="openclosed" value="M">
-            <label for="closed">closed</label>
-            </div>
+    <main class="main">
+        <div class="divflexmain">
+            <ul class="classUl">
+                <li class="classli"><p>li1</p> <span><p>without img</p></span></li>
+                <li class="classli">2li sarah<span class="circle-image"><img src="images/sarah.jpg" alt=""></span></li>
+                <li class="classli">3li <span class="circle-image"><img src="images/sarah.jpg" alt=""></span></li>
+                <li class="classradio"> <span class="circle-image"><img src="images/sarah.jpg" alt=""></span> <p>in progress</p>
+                    <input type="radio" id="1" name="noyes" value="yes"> <label for="1">yes</label>
+                    <input type="radio" id="2" name="noyes" value="no"> <label for="2">no</label>
+                </li>
+            </ul>
         </div>
     </main>
-    <footer class="containerGridFooter">
-        <div class="flexitem1"><button>left</button> <button>right</button></div>
+    <footer class="footer">
+        <div class="divflexFooter">
+            <button>button</button> <button>button</button>
+        </div>
     </footer>
 </div>
 </body>

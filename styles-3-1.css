@@ -1,80 +1,93 @@
-body {
-    background-color: antiquewhite;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(146, 126, 126);
 }
 
 .containerGrid {
     display: grid;
-    grid-template-columns: 50px 600px;
-    grid-template-rows: 50px 100px 55px 55px 55px 50px 50px;
+    grid-template-columns: 60px 500px;
+    grid-template-rows: 100px 50px 50px 50px;
     grid-template-areas: 
     'aside header'
-    'aside header'
     'aside main'
     'aside main'
     'aside main'
-    'aside main'
-    'aside footer'
     'aside footer';
-    border: 2px solid darkolivegreen;
-    gap: 2px;
+    gap: 10px;
+    border: 3mm ridge rgb(167, 114, 114);
 }
 
-.containerGridHeader {
+.header {
     grid-area: header;
+    border: 2px solid rgb(241, 202, 202);
 }
-.containerGridAside {
+
+.aside {
     grid-area: aside;
-    background-color: rgb(203, 226, 240);
+    border: 2px solid rgb(241, 202, 202);
 }
-.containerGridMain {
+
+.main {
     grid-area: main;
-    background-color: rgb(203, 203, 236);
 }
-.containerGridFooter {
+
+.footer {
     grid-area: footer;
-    grid-row: 8/8;
-    background-color: rgba(140, 147, 252, 0.377);
 }
-.flexitem1 {
+
+li, a, button {
+    font-family: "Nanum Gothic";
+    font-size: 16px;
+    color: bisque;
+    list-style: none;
+    padding: 2px;
+}
+
+h1, h2 {
+    font-family: "Nanum Gothic";
+    color: bisque;
+}
+
+.divflexHeader {
+    display: flex;
+}
+
+.divflexmain {
+    display: flex;
+}
+
+.classUl {
+    align-items: center;
+    justify-content: space-between;
+    border: 1mm solid rgb(167, 114, 114);
+}
+
+.classli {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.classradio {
+    display: flex;
+    width: 500px;
+    align-items: baseline;
+    gap: 2mm;
+}
+
+
+.divflexFooter {
     display: flex;
     justify-content: space-between;
+    border: 2px solid rgb(241, 202, 202);
 }
-.flexitem2 {
-    display: flex;
-    flex-direction: row-reverse;
-}
-.flexitem3 {
-    display: flex;
-}
-.buttonradiogrid {
-    display: grid;
-    grid-row: 6/6;
-}
-.buttonradioImgDiv {
-    display: flex;
-    border: 2px solid black;
-}
-
-.containerGridOneTwhoThree {
-    display: flex;
-    flex-wrap: wrap;
-}
-.containerGridOneTwhoThree > p {
-    flex: 1 1 500px;
-}
-
-.one1 {
-    border: 2px solid black;
-    order: 1;
-    align-self: flex-end;
-}
-.two2 {
-    border: 2px solid black;
-    order: 2;
-}
-.three3 {
-    border: 2px solid black;
-    order: 3;
+aside {
+    border: 2px solid rgb(241, 202, 202);
 }
 
 .circle-image{
@@ -88,4 +101,9 @@ body {
     width:100%;
     height:100%;
     object-fit: cover;
+  }
+  
+  p {
+    display: flex;
+    margin-right: 30px;
   }
